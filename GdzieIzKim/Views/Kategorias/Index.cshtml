@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Lista Kategorii</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Utwórz nową", "Create")
 </p>
 <table class="table">
     <tr>
@@ -20,20 +20,25 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NazwaKat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OpisKat)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.KategoriaId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.KategoriaId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.KategoriaId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazwaKat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OpisKat)
+            </td>
+            <td>
+                @Html.ActionLink("Edytuj", "Edit", new { id = item.KategoriaId }) |
+                @Html.ActionLink("Szczegóły", "Details", new { id = item.KategoriaId }) |
+                @Html.ActionLink("Usuń", "Delete", new { id = item.KategoriaId })
+            </td>
+        </tr>
+    }
 
 </table>
+
+<p>
+    @Html.ActionLink("Powrót", "AdminPanel", "Home")
+</p>
