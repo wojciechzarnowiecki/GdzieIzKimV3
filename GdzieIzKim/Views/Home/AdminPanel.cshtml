@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Witaj w panelu administracyjnym";
+    var linkKat = "Kategorias/Index";
+    var linkLok = "Lokalizacjas/Index";
+
+}
+
+<h2>@ViewBag.Title.</h2>
+<div class="row">
+    <h1>Administracja</h1>
+
+    <br />
+
+    <a href="@linkKat" class="btn btn-danger btn-lg">
+        <span class="glyphicon glyphicon-wrench"></span> Kategorie
+    </a>
+
+    <br /><br />
+
+    <a href="@linkLok" class="btn btn-danger btn-lg">
+        <span class="glyphicon glyphicon-wrench"></span> Lokalizacje
+    </a>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

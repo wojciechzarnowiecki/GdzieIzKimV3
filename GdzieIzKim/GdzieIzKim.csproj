@@ -192,6 +192,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KategoriasController.cs" />
+    <Compile Include="Controllers\LokalizacjasController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DAL\contextDB.cs" />
     <Compile Include="Global.asax.cs">
@@ -267,6 +269,18 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Lokalizacjas\Create.cshtml" />
+    <Content Include="Views\Lokalizacjas\Delete.cshtml" />
+    <Content Include="Views\Lokalizacjas\Details.cshtml" />
+    <Content Include="Views\Lokalizacjas\Edit.cshtml" />
+    <Content Include="Views\Lokalizacjas\Index.cshtml" />
+    <Content Include="Views\Kategorias\Create.cshtml" />
+    <Content Include="Views\Kategorias\Delete.cshtml" />
+    <Content Include="Views\Kategorias\Details.cshtml" />
+    <Content Include="Views\Kategorias\Edit.cshtml" />
+    <Content Include="Views\Kategorias\Index.cshtml" />
+    <Content Include="Views\Home\AdminPanel.cshtml" />
+    <Content Include="Views\Home\Mapa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

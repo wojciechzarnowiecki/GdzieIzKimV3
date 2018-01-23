@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Mapa ciekawych miejsc w Twojej okolicy</h3>
+    <div id="map"></div>
+    <br />
+    <div>
+        <input type="button" value="Znajdź w wyświetlanym obszarze" onclick="codeAddress()">
+    </div>
+    <script>
+        var geocoder;
+        var map;
+        function initialize() {
+            geocoder = new google.maps.Geocoder();
+            var latlng = new google.maps.LatLng(50.6687500, 17.8796660);
+            var mapOptions = {
+                zoom: 12,
+                center: latlng
+            }
+            map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            var infoWindow = new google.maps.InfoWindow;
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('Jesteś tutaj.');
+                    infoWindow.open(map);
+                    map.setCenter(pos);
+                }, function () {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+
+        function codeAddress() {
+        $.get("@Url.Action("GetAll", "Home")", function (data, status) {
+            var address = [];
+
+            for (var i = 0; i < data.length; i++) {
+                var address = [];
+
+
+                    address = data[i].adres;
+                    geocoder.geocode({ 'address': address }, function (results, status) {
+                        if (status == 'OK') {
+                            //map.setCenter(results[0].geometry.location);
+                            var marker = new google.maps.Marker({
+                                map: map,
+                                position: results[0].geometry.location
+                            });
+                        } else {
+                            alert('Geocode was not successful for the following reason: ' + status);
+                        }
+                    });
+
+            }
+        });
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: Serwis Geolocation przestał działać.' :
+                'Error: Twoja przeglądarka nie obsługuje geolokalizacji.');
+            infoWindow.open(map);
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsvXhEPlkCvqXapHw_En7QwyOML_Wvffc&callback=initialize">
+    </script>
+</body>
+</html>
