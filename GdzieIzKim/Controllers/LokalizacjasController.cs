@@ -53,7 +53,7 @@ namespace GdzieIzKim.Controllers
             {
                 db.Lokalizacje.Add(lokalizacja);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(lokalizacja);

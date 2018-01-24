@@ -13,10 +13,12 @@ namespace GdzieIzKim.Models
         [Display(Name = "Nazwa")]
         public string nazwa { get; set; }
         [Display(Name = "Adres")]
+        [Required(ErrorMessage ="Proszę wprowadzić adres, lub słowo kluczowe")]
         public string adres { get; set; }
         [Display(Name = "Opis")]
         public string opis { get; set; }
         [Display(Name ="Z kim?")]
+        [Required(ErrorMessage = "Koniecznie wprowadzić jedną z opcji: 1) dzieci 2) zakochani 3) studenci")]
         public string zkim { get; set; }
 
         //[Display(Name = "Kategoria")]
