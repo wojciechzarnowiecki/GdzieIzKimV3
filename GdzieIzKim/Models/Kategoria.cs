@@ -15,6 +15,6 @@ namespace GdzieIzKim.Models
         [Display(Name = "Opis")]
         public string OpisKat { get; set; }
 
-        public virtual ICollection<Lokalizacja> Lokalizacja { get; set; }
+        //public virtual ICollection<Lokalizacja> Lokalizacja { get; set; }
     }
 }

@@ -47,7 +47,7 @@ namespace GdzieIzKim.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "LokalizacjaId,nazwa,adres")] Lokalizacja lokalizacja)
+        public ActionResult Create([Bind(Include = "LokalizacjaId,nazwa,adres,opis,zkim")] Lokalizacja lokalizacja)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace GdzieIzKim.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "LokalizacjaId,nazwa,adres")] Lokalizacja lokalizacja)
+        public ActionResult Edit([Bind(Include = "LokalizacjaId,nazwa,adres,opis,zkim")] Lokalizacja lokalizacja)
         {
             if (ModelState.IsValid)
             {

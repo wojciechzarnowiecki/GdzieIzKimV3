@@ -16,6 +16,8 @@ namespace GdzieIzKim.Models
         public string adres { get; set; }
         [Display(Name = "Opis")]
         public string opis { get; set; }
+        [Display(Name ="Z kim?")]
+        public string zkim { get; set; }
 
         //[Display(Name = "Kategoria")]
         //public int KategoriaId { get; set; }

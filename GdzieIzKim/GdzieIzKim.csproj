@@ -207,6 +207,14 @@
     <Compile Include="Migrations\201801232335375_2krok.Designer.cs">
       <DependentUpon>201801232335375_2krok.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801241917446_1krok.cs" />
+    <Compile Include="Migrations\201801241917446_1krok.Designer.cs">
+      <DependentUpon>201801241917446_1krok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801241922057_3krok.cs" />
+    <Compile Include="Migrations\201801241922057_3krok.Designer.cs">
+      <DependentUpon>201801241922057_3krok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -310,6 +318,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801232335375_2krok.resx">
       <DependentUpon>201801232335375_2krok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801241917446_1krok.resx">
+      <DependentUpon>201801241917446_1krok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801241922057_3krok.resx">
+      <DependentUpon>201801241922057_3krok.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
