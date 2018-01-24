@@ -8,17 +8,21 @@
     <style>
         #map {
             height: 400px;
-            width: 100%;
+            width: 95%;
         }
     </style>
 </head>
 <body>
     <h3>Mapa ciekawych miejsc w Twojej okolicy</h3>
-    <div id="map"></div>
-    <br />
-    <div>
-        <input type="button" value="Znajdź w wyświetlanym obszarze" onclick="codeAddress()">
+    <div class="row">
+        <div class="col-sm-7">
+            <div id="map"></div>
+        </div>
+        <div class="col-sm-5">
+            <input class="btn btn-green btn-lg" type="button" value="Znajdź " onclick="codeAddress()">
+        </div>
     </div>
+
     <script>
         var geocoder;
         var map;

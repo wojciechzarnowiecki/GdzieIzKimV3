@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Gdzie i z kim?</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body style="background: url('../../img/main.jpg'); background-size: cover">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -29,13 +29,14 @@
             </div>
         </div>
     </div>
-    <div class="container body-content, text-center" style="width: 50%">
+    <div class="container body-content" , style="padding-top:100px">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Created by Justyna & Wojciech Żarnowieccy</p>
-        </footer>
     </div>
+
+    <footer style="position:absolute;right:0;left:0;bottom:0;padding:1rem;text-align:center; color:white; font-family: Helvetica Neue, Comic Sans MS, Comic Sans, cursive;">
+        <p>&copy; @DateTime.Now.Year - Created by Justyna & Wojciech Żarnowieccy</p>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
