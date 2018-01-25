@@ -199,29 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201801232252367_0krok.cs" />
-    <Compile Include="Migrations\201801232252367_0krok.Designer.cs">
-      <DependentUpon>201801232252367_0krok.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801232335375_2krok.cs" />
-    <Compile Include="Migrations\201801232335375_2krok.Designer.cs">
-      <DependentUpon>201801232335375_2krok.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801241917446_1krok.cs" />
-    <Compile Include="Migrations\201801241917446_1krok.Designer.cs">
-      <DependentUpon>201801241917446_1krok.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801241922057_3krok.cs" />
-    <Compile Include="Migrations\201801241922057_3krok.Designer.cs">
-      <DependentUpon>201801241922057_3krok.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801241951001_4krok.cs" />
-    <Compile Include="Migrations\201801241951001_4krok.Designer.cs">
-      <DependentUpon>201801241951001_4krok.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801242005426_5krok.cs" />
-    <Compile Include="Migrations\201801242005426_5krok.Designer.cs">
-      <DependentUpon>201801242005426_5krok.cs</DependentUpon>
+    <Compile Include="Migrations\201801251716542_6krok.cs" />
+    <Compile Include="Migrations\201801251716542_6krok.Designer.cs">
+      <DependentUpon>201801251716542_6krok.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -326,23 +306,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201801232252367_0krok.resx">
-      <DependentUpon>201801232252367_0krok.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801232335375_2krok.resx">
-      <DependentUpon>201801232335375_2krok.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801241917446_1krok.resx">
-      <DependentUpon>201801241917446_1krok.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801241922057_3krok.resx">
-      <DependentUpon>201801241922057_3krok.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801241951001_4krok.resx">
-      <DependentUpon>201801241951001_4krok.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801242005426_5krok.resx">
-      <DependentUpon>201801242005426_5krok.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801251716542_6krok.resx">
+      <DependentUpon>201801251716542_6krok.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,13 +7,13 @@ namespace GdzieIzKim.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class _0krok : IMigrationMetadata
+    public sealed partial class _6krok : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_0krok));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(_6krok));
         
         string IMigrationMetadata.Id
         {
-            get { return "201801232252367_0krok"; }
+            get { return "201801251716542_6krok"; }
         }
         
         string IMigrationMetadata.Source
